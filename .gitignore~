@@ -1,3 +1,4 @@
 db.sqlite3
 fe\migrations
 mydb\migrations
+sekolah_masehi\settings.py
