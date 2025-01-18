@@ -2,29 +2,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.4/htmx.min.js" integrity="sha512-2kIcAizYXhIn8TzUvqzEDZNuDZ+aW7yE/+f1HJHXFjQcGNfv1kqzJSTBRBSlOgp6B/KZsz1K0a3ZTqP9dnxioQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.datatables.net/2.2.0/js/dataTables.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.0/css/dataTables.dataTables.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sekolah Masehi Temanggung</title>
     <link rel="shortcut icon" href="{% static 'images/logo.ico' %}" type="image/x-icon">
 </head>
 <body>
-    <div class="pt-2 text-white d-flex justify-content-evenly align-items-center bg-info container-fluid">
-        <p>Admin</p>
-        <p>Contact: 0293-4535345</p>
-        <p>Sekolah di Masehi?</p>
-        <p>Mengajar di Masehi?</p>
+<div class="container-fluid">
+    <div class=" d-flex justify-content-center">
+            <!-- untuk miring ke kanan -->
+            <div class="col-2   text-primary rounded" style="transform: skewX(-45deg);background-image: linear-gradient(to right,violet,white);" ></div>
+            
+            <!-- untuk tulisan tengah -->
+            <div class="col-4  text-center fw-bold" >
+                <!-- tulisan memantul kanan kiri -->
+                <marquee behavior="alternate" direction="" class="fw-bold  ">Welcome to Sekolah Masehi Temanggung</marquee>
+            </div>
+            
+            <!-- untuk miring ke kiri -->
+            <div class="col-2   rounded " style="transform: skewX(45deg);background-image:linear-gradient(to right,white,violet)"></div>
     </div>
-    <div class="pt-2 text-dark pb-2 d-flex justify-content-between align-items-center bg-white container-fluid">
-        <img src="{% static 'images/logo.jpg'%}" class="rounded-circle" 
-            style="width: 100px;height: 100px;box-shadow: 0px 0px 15px lightblue;padding:5px" 
-        alt="">
+
+    <div class="bg-gradient rounded" style="background-color: violet;">
+        <div class="row">
+            <div class="col-6">
+                <!-- untuk logo masehi -->
+                <div class="row p-4 align-items-center ">
+                        <div class="col-4">
+                            <img src="{% static 'images\logo.jpg'%}" class="w-100 rounded-circle shadow" alt="">
+                        </div>
+                        <div class="col-8 text-start">
+                            <span class="fs-3 fw-bold">Sekolah Masehi Temanggung</span><br>
+                            <span>Jl. Dr. Sutomo 1a</span><br>
+                            <span>Temanggung - Jawa Tengah</span><br>
+                            <span>Telepon: 0293-4535345</span>
+                        </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="align-items-center">
+                    <img src="{% static 'images/header.png'%}" class="w-100  rounded px-3" alt="">
+                </div>
+                
+            </div>
+        </div>
+        <div class="d-flex justify-content-evenly">
+            <!-- untuk menu -->
+                
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="mailto:smpmasehi2019@gmail.com">
+                            <p class="pt-2 px-4 text-dark">DayCare</p>
+                        </a>
+                    </div>
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="#">
+                            <p class="pt-2 px-4">PAUD</p>
+                        </a>
+                    </div>
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="#">
+                            <p class="pt-2 px-4">TK</p>
+                        </a>
+                    </div>
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="#">
+                            <p class="pt-2 px-4">SD</p>
+                        </a>
+                    </div>
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="#">
+                            <p class="pt-2 px-4">SMP</p>
+                        </a>
+                    </div>
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="#">
+                            <p class="pt-2 px-4">Tentang Kami</p>
+                        </a>
+                    </div>
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="#">
+                            <p class="pt-2 px-4">Kontak Kami</p>
+                        </a>
+                    </div>
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="#">
+                            <p class="pt-2 px-4">Kegiatan Kami</p>
+                        </a>
+                    </div>
+                
+        </div>
     </div>
+    <div class="mt-3 p-2">
+            {% block contents%}
+            {% endblock %}
+    </div>
+</div>
+    
+
+    
     
 </body>
 </html>
