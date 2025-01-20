@@ -2,13 +2,8 @@ from django.shortcuts import render, HttpResponse, HttpResponsePermanentRedirect
 import os
 from django.conf import settings
 
-def welcome(request):
-    return render(request,'welcome.html')
-    # return HttpResponse('Hallo Selamat Pagi')
-
-def testPage(request):
-    return render(request,'test.html')
-    # return HttpResponse('Hallo Selamat Pagi')
+def indeks(request):
+    return render(request,'indeks.html')
 
 def tentangKami(request):
     return render(request,'section/kami.html')
