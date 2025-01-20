@@ -21,7 +21,7 @@ def blogsSection(request,id):
     
 def blogsList(request):
     lokasi_base_path = str(settings.BASE_DIR)
-    lokasi_template = '\\templates\\blogs\\'
+    lokasi_template = '/templates/blogs/'
     gabungan_lokasi = lokasi_base_path+lokasi_template
     
     #simpan daftar template ke dalam list []
