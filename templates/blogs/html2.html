@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+<div class="text-center">
+    <p>
+        <img src="{% static 'images/html1.png'%}" class="w-25" alt="" srcset="">
+    </p>
+    <p class="h3">Pengenalan HTML 2</p>
+    <p class="h5">oleh: Suryo Adhy Chandra, ST</p>
+</div>
+<div class="p-2 mt-2 shadow">
+    <p class="fw-bold h5 mt-2">
+        Tag Menampilkan Informasi
+    </p>
+    <p>
+        Untuk menampilkan informasi dalam HTML ada beberapa tag yang bisa kita pakai, antara lain:
+    </p>
+    <p>
+        <ul>
+            <li><span>&lt;p&gt;</span> dipakai untuk menampilkan data dalam bentuk paragraf</li>
+            <li><span>&lt;span&gt;</span> dipakai untuk menampilkan tulisan yang bisa tempelkan ke dalam paragraf</li>
+            <li><span>&lt;pre&gt;</span> dipakai untuk menampilkan dalam bentuk terformat kita bisa melihat seperti huruf jenis courier new</li>
+            <li><span>&lt;marquee&gt;</span> dipakai untuk menampilkan huruf berjalan</li>
+            <li><span>&lt;blockquote&gt;</span> dipakai untuk menampilkan kutipan teks dari sumber lain</li>
+            
+        </ul>
+    </p>
+</div>
+{% endblock %}
