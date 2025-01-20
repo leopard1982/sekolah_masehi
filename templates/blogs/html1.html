@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+<div class="text-center">
+    <p>
+        <img src="{% static 'images/html1.png'%}" class="w-25" alt="" srcset="">
+    </p>
+    <p class="h3">HTML - Part 1</p>
+    <p class="h5">oleh: Suryo Adhy Chandra, ST</p>
+</div>
+<div class="p-2 mt-2 shadow">
+    <p class="fw-bold h5 mt-2">
+        Pengertian HTML
+    </p>
+    <p>
+        HTML adalah singkatan dari Hypertext Markup Language, HTML merupakan salah satu bahasa pengkodean atau pemograman yang digunakan untuk membuat halaman website yang ditampilkan pada web browser. Sebagian besar halaman yang kamu temukan pada internet kebanyakan menggunakan Bahasa HTML
+    </p>
+    <p class="fw-bold h5 mt-2">
+        Sejarah Singkat Pemrograman HTML
+    </p>
+    <p>
+        HTML diciptakan oleh Sir Tim Berners-lee pada akhir tahun 1991 namun tidak dirilis secara resmi. Sir Tim Berners-lee merilis HTML versi pertama pada tahun 1993 dengan tujuan untuk berbagi informasi yang dapat dibaca dan diakses melalui web browser.
+Hingga saat ini versi HTML sudah mencapai versi 5 yang dirilis pada tahun 2012, Versi HTML 5 ini merupakan terusan dari perpanjangan versi HTML 4.01 yang sebelumnya digunakan oleh kebanyakan orang.
+    </p>
+    <p class="fw-bold h5 mt-2">
+        Cara kerja bahasa pemrograman HTML
+    </p>
+    <p>
+        Pertama-tama kamu harus membuat dokumen HTML pada aplikasi editor HTML seperti Visual Studio, Sublime Text dan lain-lainnya , lalu menyimannya dengan format html atau htm. File HTML dibuat bisa lebih dari satu tergantung kebutuhan file yang akan diperlukan. File-file yang telah dibuat ini berisi Halaman Utama , kontak , isi Website dan lain-lain.
+File HTML dapat dibuka oleh web browser seperti Google Chrome , Mozilla Firefox, Internet Explore dan masih banyak lagi. Kemudian, agar dapat diakses oleh banyak orang kamu harus menyewa layanan Hosting website dan mengupload file HTML pada halaman hosting yang dapat kamu akses pada cpanel.
+File HTML yang sudah terupload, maka browser akan merender file HTML menjadi halaman website sehingga kamu dan pengunjung web lain dapat mengaksesnya melalui internet.
+    </p>
+</div>
+{% endblock %}

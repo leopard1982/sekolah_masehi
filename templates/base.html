@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <div class=" d-flex justify-content-center">
+    <div class=" d-flex justify-content-center" >
             <!-- untuk miring ke kanan -->
             <div class="col-2   text-primary rounded" style="transform: skewX(-45deg);background-image: linear-gradient(to right,violet,white);" ></div>
             
@@ -29,22 +29,25 @@
     <div class="bg-gradient rounded" style="background-color: violet;">
         <div class="row">
             <div class="col-6">
+                
                 <!-- untuk logo masehi -->
                 <div class="row p-4 align-items-center ">
-                        <div class="col-4">
-                            <img src="{% static 'images\logo.jpg'%}" class="w-100 rounded-circle shadow" alt="">
-                        </div>
-                        <div class="col-8 text-start">
+                    <div class="col-4">
+                        <a href="/">
+                            <img src="{% static 'images\logo.jpg'%}" class="w-100 rounded-circle shadow p-2 bg-white" alt="">
+                        </a>
+                    </div>
+                    <div class="col-8 text-start">
                             <span class="fs-3 fw-bold">Sekolah Masehi Temanggung</span><br>
                             <span>Jl. Dr. Sutomo 1a</span><br>
                             <span>Temanggung - Jawa Tengah</span><br>
                             <span>Telepon: 0293-4535345</span>
-                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-6">
                 <div class="align-items-center">
-                    <img src="{% static 'images/header.png'%}" class="w-100  rounded px-3" alt="">
+                    <img src="{% static 'images/header.png'%}" class="w-100  rounded p-3" alt="">
                 </div>
                 
             </div>
@@ -53,8 +56,8 @@
             <!-- untuk menu -->
                 
                     <div class="  bg-white rounded-top mx-2">
-                        <a href="mailto:smpmasehi2019@gmail.com">
-                            <p class="pt-2 px-4 text-dark">DayCare</p>
+                        <a href="#">
+                            <p class="pt-2 px-4">DayCare</p>
                         </a>
                     </div>
                     <div class="  bg-white rounded-top mx-2">
@@ -77,19 +80,20 @@
                             <p class="pt-2 px-4">SMP</p>
                         </a>
                     </div>
+                    
                     <div class="  bg-white rounded-top mx-2">
-                        <a href="#">
-                            <p class="pt-2 px-4">Tentang Kami</p>
-                        </a>
-                    </div>
-                    <div class="  bg-white rounded-top mx-2">
-                        <a href="#">
+                        <a href="mailto:smpmasehi2019@gmail.com">
                             <p class="pt-2 px-4">Kontak Kami</p>
                         </a>
                     </div>
                     <div class="  bg-white rounded-top mx-2">
                         <a href="#">
-                            <p class="pt-2 px-4">Kegiatan Kami</p>
+                            <p class="pt-2 px-4">Blogs Materi</p>
+                        </a>
+                    </div>
+                    <div class="  bg-white rounded-top mx-2">
+                        <a href="{% url 'tentang_kami'%}">
+                            <p class="pt-2 px-4">Tentang Kami</p>
                         </a>
                     </div>
                 
