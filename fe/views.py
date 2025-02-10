@@ -13,6 +13,8 @@ def blogsSection(request,id):
         return render(request,'blogs/html1.html')
     elif id=="2":
         return render(request,'blogs/html2.html')
+    elif id=="3":
+        return render(request,'blogs/html3.html')
     else:
         return render(request,'section/kami.html')
     

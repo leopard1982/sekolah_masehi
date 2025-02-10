@@ -9,90 +9,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sekolah Masehi Temanggung</title>
     <link rel="shortcut icon" href="{% static 'images/logo.ico' %}" type="image/x-icon">
+    {% block styles %}
+    {% endblock %}
+    <style>
+        
+    </style>
 </head>
 <body>
 <div class="container-fluid">
-    <div class=" d-flex justify-content-center" >
-            <!-- untuk miring ke kanan -->
-            <div class="col-2   text-primary rounded" style="transform: skewX(-45deg);background-image: linear-gradient(to right,violet,white);" ></div>
-            
-            <!-- untuk tulisan tengah -->
-            <div class="col-4  text-center fw-bold" >
-                <!-- tulisan memantul kanan kiri -->
-                <marquee behavior="alternate" direction="" class="fw-bold  ">Welcome to Sekolah Masehi Temanggung</marquee>
-            </div>
-            
-            <!-- untuk miring ke kiri -->
-            <div class="col-2   rounded " style="transform: skewX(45deg);background-image:linear-gradient(to right,white,violet)"></div>
-    </div>
-
     <div class="bg-gradient rounded" style="background-color: violet;">
-        <div class="row">
-            <div class="col-6">
-                
+        <div class="row p-2">
                 <!-- untuk logo masehi -->
-                <div class="row p-4 align-items-center ">
-                    <div class="col-4">
+                <div class="col-lg-2 col-md-3 col-3 d-flex justify-content-center align-items-center">
                         <a href="/">
                             <img src="{% static 'images\logo.jpg'%}" class="w-100 rounded-circle shadow p-2 bg-white" alt="">
                         </a>
-                    </div>
-                    <div class="col-8 text-start">
-                            <span class="fs-3 fw-bold">Sekolah Masehi Temanggung</span><br>
+                </div>
+                <div class="col-lg-10 col-md-9 col-9 justify-content-start d-flex align-items-center">
+                    <div>
+                            <span class="fs-3  fw-bold">Sekolah Masehi Temanggung</span><br>
                             <span>Jl. Dr. Sutomo 1a</span><br>
                             <span>Temanggung - Jawa Tengah</span><br>
                             <span>Telepon: 0293-4535345</span>
                     </div>
+                        
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="align-items-center">
-                    <img src="{% static 'images/header.png'%}" class="w-100  rounded p-3" alt="">
-                </div>
-                
-            </div>
         </div>
-        <div class="d-flex justify-content-center">
-            <!-- untuk menu -->
-                
-                    <div class="  bg-white rounded-top mx-1">
-                        <a href="#">
-                            <p class="pt-2 px-2">DayCare</p>
-                        </a>
+        <div class="">
+            <nav class="navbar navbar-expand-lg navbar-light " style="background-color: lightgrey;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active menu-bar" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  px-2 menu-bar" href="#">Visi dan Misi</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  px-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sekolah Kami
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Day Care</a></li>
+                                    <li><a class="dropdown-item" href="#">Pra Play Group (PPG)</a></li>
+                                    <li><a class="dropdown-item" href="#">TK</a></li>
+                                    <li><a class="dropdown-item" href="#">SD</a></li>
+                                    <li><a class="dropdown-item" href="#">SMP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  px-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Extra Kurikuler
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Drum Band</a></li>
+                                    <li><a class="dropdown-item" href="#">Basket</a></li>
+                                    <li><a class="dropdown-item" href="#">Coding Club</a></li>
+                                    <li><a class="dropdown-item" href="#">Musik</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  px-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fasilitas Sekolah
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Lapangan Basket</a></li>
+                                    <li><a class="dropdown-item" href="#">Laboratorium IPA</a></li>
+                                    <li><a class="dropdown-item" href="#">Laboratorium Bahasa</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  px-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Profil Staff dan Pengajar
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Staff</a></li>
+                                    <li><a class="dropdown-item" href="#">Guru PPG dan Day Care</a></li>
+                                    <li><a class="dropdown-item" href="#">Guru TK</a></li>
+                                    <li><a class="dropdown-item" href="#">Guru SD</a></li>
+                                    <li><a class="dropdown-item" href="#">Guru SMP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle  px-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Materi Online
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="{% url 'blogs_list'%}">Extra Coding</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  px-2 menu-bar" href="{% url 'tentang_kami' %}">Kontributor</a>
+                            </li>
+                        </ul>
                     </div>
-                    
-                    <div class="  bg-white rounded-top mx-1">
-                        <a href="#">
-                            <p class="pt-2 px-2">TK</p>
-                        </a>
-                    </div>
-                    <div class="  bg-white rounded-top mx-1">
-                        <a href="#">
-                            <p class="pt-2 px-2">SD</p>
-                        </a>
-                    </div>
-                    <div class="  bg-white rounded-top mx-1">
-                        <a href="#">
-                            <p class="pt-2 px-2">SMP</p>
-                        </a>
-                    </div>
-                    
-                    <div class="  bg-white rounded-top mx-1">
-                        <a href="mailto:smpmasehi2019@gmail.com">
-                            <p class="pt-2 px-2">Kontak</p>
-                        </a>
-                    </div>
-                    <div class="  bg-white rounded-top mx-1">
-                        <a href="{% url 'blogs_list' %}">
-                            <p class="pt-2 px-2">Blogs</p>
-                        </a>
-                    </div>
-                    <div class="  bg-white rounded-top mx-1">
-                        <a href="{% url 'tentang_kami'%}">
-                            <p class="pt-2 px-2">Kami</p>
-                        </a>
-                    </div>
-                
+                </div>
+                </nav>
         </div>
     </div>
     <div class="mt-3 p-2">
