@@ -18,20 +18,55 @@
         membuat tampilan informasi dalam html menjadi lebih jelas.
     </p>
     <p>
-        Kita mungkin mengerti bahwa ketika kita membuat daftar peserta ekstra misalnya, ada urutan nomor 1, 2 dan sebagainya.
-        nah, materi ke-3 ini kita akan membuat style dari halaman web kita.
+        Kita mungkin mengerti bahwa ketika kita membuat daftar peserta ekstra misalnya, kita mau membuat style:
+        <p class="px-4 mx-2" style="border-left: 1px solid grey;">
+            <b>Seorang</b> anak sedang <u>berlari kecil</u> tetapi ada <i>teman</i> yang mau ikut berlari juga. <br>
+            Ketika sampai di <b><i>kelas</i></b> mereka <s>tidak langsung duduk</s> tetapi minum  <sup>air segar</sup> dan <sub>makan camilan</sub>.
+        </p>
+    </p>
+    <p class="h3 fw-bold py-2">Yuk segera kita mulai!</p>
+    <p>
+        <h5>1. Penampil ukuran huruf</h5>
+        <span>
+            Penampil ukuran huruf bs ditandai dengan tag &lt;h1&gt;kalimat yang mau dibesarkan&lt;/h1&gt;<br>
+            ukuran h1 adalah ukurang yang paling besar dan kemudian paling kecil adalah h5, yaitu: <br>
+            <p >
+                <h1 class="px-4 mx-2" style="border-left: 1px solid grey;">h1</h1><h2 class="px-4 mx-2" style="border-left: 1px solid grey;">h2</h2><h3 class="px-4 mx-2" style="border-left: 1px solid grey;">h3</h3><h4 class="px-4 mx-2" style="border-left: 1px solid grey;">h4</h4><h5 class="px-4 mx-2" style="border-left: 1px solid grey;">h5</h5>
+            </p>
+        </span>
     </p>
     <p>
-        <ul>
-            <li><span>&lt;p&gt;<span>&lt;/p&gt;</span> dipakai untuk menampilkan data dalam bentuk paragraf</li>
-            <li><span>&lt;span&gt;&lt;/span&gt;</span> dipakai untuk menampilkan tulisan yang bisa tempelkan ke dalam paragraf</li>
-            <li><span>&lt;pre&gt;&lt;/pre&gt;</span> dipakai untuk menampilkan dalam bentuk terformat kita bisa melihat seperti huruf jenis courier new</li>
-            <li><span>&lt;marquee&gt;&lt;/marquee&gt;</span> dipakai untuk menampilkan huruf berjalan</li>
-            <li><span>&lt;blockquote&gt;&lt;/blockquote&gt;</span> dipakai untuk menampilkan kutipan teks dari sumber lain</li>
-            <li><span>&lt;footer&gt;&lt;/footer&gt;</span> dipakai untuk menampilkan catatan kaki (biasa ada di bawah)</li>
-            <li><span>&lt;br/&gt;</span> dipakai untuk membuat ganti baris (atau seperti kita menekan tombol enter)</li>
-            <li><span>&lt;hr/&gt;</span> dipakai untuk menampilkan garis panjang</li>
-        </ul>
+        <h5>2. Membuat posisi kalimat di kiri, tengah atau kanan</h5>
+        <span>
+            Untuk menampilkan posisi kalimat atau apapun ke kiri tengah atau kanan sangat mudah, yaitu dengan menggunakan tag: <br>
+            <ul>
+                <li>Membuat ke kiri &lt;left&gt;kalimat yang mau ke kiri&lt;/left&gt;</li>
+                <li>Membuat ke kanan &lt;right&gt;kalimat yang mau ke kanan&lt;/right&gt;</li>
+                <li>Membuat ke tengah &lt;center&gt;kalimat yang mau ke tengah&lt;/center&gt;</li>
+            </ul>
+        </span>
+    </p>
+    <p>
+        <h5>3. Membuat huruf jadi tebal, miring, garis bawah, garis tengah</h5>
+        <span>
+            Untuk membuat huruf atau kalimat atau kata menjadi tebal, miring, garis tengah atau garis bawah menggunakan tag: <br>
+            <ul>
+                <li>Membuat tebal &lt;b&gt;kata yang mau ditebalkan&lt;/b&gt;</li>
+                <li>Membuat miring &lt;i&gt;kata yang mau dicetak miring&lt;/i&gt;</li>
+                <li>Membuat garis bawah &lt;u&gt;kalimat yang mau dikasih garis bawah&lt;/u&gt;</li>
+                <li>Membuat garis tengah &lt;s&gt;kalimat yang mau dikasih garis tengah&lt;/s&gt;</li>
+            </ul>
+        </span>
+    </p>
+    <p>
+        <h5>4. Membuat huruf menjadi seperti pangkat atau indeks</h5>
+        <span>
+            Untuk membuat huruf menjadi pangkat atau indeks menggunakan tag: <br>
+            <ul>
+                <li>Membuat pangkat (di atas)&lt;sup&gt;kata yang mau jadikan pangkat&lt;/sup&gt;</li>
+                <li>Membuat indeks (di bawah) &lt;sub&gt;kata yang mau dijadikan indeks&lt;/sub&gt;</li>
+            </ul>
+        </span>
     </p>
 </div>
 {% endblock %}
