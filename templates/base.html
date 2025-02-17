@@ -21,7 +21,9 @@
         }
 
         .welcome {
-            min-width: 400px;
+            min-width: 300px;
+            max-width: 300px;
+            min-height: 60px;
         }
 
     </style>
@@ -29,7 +31,7 @@
 <body>
 <div >
     <div class="bg-gradient rounded" style="background-color: #F8EBDC;">
-        <div class="d-flex justify-content-between justify-content-md-center p-2">
+        <div class="d-flex justify-content-between  p-2">
             <div class="d-flex justify-content-start" >
                 <!-- untuk logo masehi -->
                 <div class="d-flex justify-content-center align-items-center">
@@ -48,8 +50,8 @@
                         
                 </div>
             </div>
-            <div class="d-none d-lg-flex  justify-content-end">
-                <img src="{% static 'images/welcome.png'%}" class="w-50 welcome" alt="">
+            <div class="d-none d-lg-flex  d-md-flex  justify-content-lg-end">
+                <img src="{% static 'images/welcome.png'%}" class="welcome" alt="">
             </div>
                 
         </div>
