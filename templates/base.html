@@ -12,31 +12,49 @@
     {% block styles %}
     {% endblock %}
     <style>
-        
+        .logo {
+            min-width: 130px;
+            max-width: 130px;
+            min-height: 130px;
+            max-height: 130px;
+            border-radius: 50%;
+        }
+
+        .welcome {
+            min-width: 400px;
+        }
+
     </style>
 </head>
 <body>
 <div class="container-fluid">
-    <div class="bg-gradient rounded" style="background-color: violet;">
-        <div class="row p-2">
+    <div class="bg-gradient rounded" style="background-color: #F8EBDC;">
+        <div class="d-flex justify-content-between justify-content-md-center p-2">
+            <div class="d-flex justify-content-start" >
                 <!-- untuk logo masehi -->
-                <div class="col-lg-2 col-md-3 col-3 d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center">
                         <a href="/">
-                            <img src="{% static 'images\logo.jpg'%}" class="w-100 rounded-circle shadow  bg-white" alt="">
+                            <img src="{% static 'images\logo.jpg'%}" class="logo" alt="">
                         </a>
                 </div>
-                <div class="col-lg-10 col-md-9 col-9 justify-content-start d-flex align-items-center">
+                <!-- untuk alamat masehi -->
+                <div class="justify-content-start d-flex align-items-center p-2" >
                     <div>
-                            <span class="fs-3  fw-bold">Sekolah Masehi Temanggung</span><br>
+                            <p class="fs-3  fw-bold" style="min-width: 350px;">YSK Masehi Temanggung</p>
                             <span>Jl. Dr. Sutomo 1a</span><br>
                             <span>Temanggung - Jawa Tengah</span><br>
                             <span>Telepon: 0293-4535345</span>
                     </div>
                         
                 </div>
+            </div>
+            <div class="d-none d-lg-flex  justify-content-end">
+                <img src="{% static 'images/welcome.png'%}" class="w-50 welcome" alt="">
+            </div>
+                
         </div>
         <div class="">
-            <nav class="navbar navbar-expand-lg navbar-light " style="background-color: lightgrey;">
+            <nav class="navbar navbar-expand-lg navbar-light  rounded-bottom shadow" style="background-color: violet">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,7 +136,11 @@
     </div>
 </div>
     
-
+<div class="footer mb-0 text-center mt-5 py-2 bg-white border-top border-secondary">
+    <p class="fw-bold fs-5">Sekolah Masehi Temanggung &copy; 2004</p>
+    <p>By: Peserta Extra Kurikuler Coding</p>
+    <p>Lecturer: <a href="mailto:'adhy.chandra@gmail.com'" target="_blank">leopard, inc</a></p>
+</div>
     
     
 </body>

@@ -1,34 +1,59 @@
 {% extends 'base.html'%}
 {% load static %}
 
+{% block styles%}
+<style>
+    .cards {
+        min-width: 250px !important;
+        max-width: 250px !important;
+        min-height: 250px;
+        max-height: 350px;
+        margin:10px;
+        border: 1px solid grey;
+        padding:5px;
+        border-radius: 15px;
+        text-align: center;
+        transition-duration: 1s;
+    }
+
+    .cards img {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .cards:hover {
+        box-shadow: 0px 5px 5px grey;
+        cursor: pointer;
+        border-radius: 0px;
+        transition-duration: 1s;
+    }
+</style>
+{% endblock%}
+
 {% block contents %}
-<div class="row p-2">
-        <div class="col-4 p-2">
-            <div class="border rounded text-center shadow">
+<div class="flex-wrap d-flex justify-content-center">
+        <div class="cards">
                 <a href="{% url 'blogs_section' 1 %}">
-                    <img src="/static/images/html1.png" class="w-25" alt="">
+                    <img src="/static/images/html1.png"  alt="">
                 </a>
                 <p class="h5 fw-bold">Pengenalan HTML 1 - Memulai HTML</p>
                 <p>by: Suryo Adhy Chandra, ST</p>
-            </div>
         </div>
-        <div class="col-4 p-2">
-            <div class="border rounded text-center shadow">
+        <div class="cards">
                 <a href="{% url 'blogs_section' 2 %}">
-                    <img src="/static/images/html2.png" class="w-25" alt="">
+                    <img src="/static/images/html2.png"  alt="">
                 </a>
                 <p class="h5 fw-bold">Pengenalan HTML 2 - Penampil Informasi</p>
                 <p>by: Suryo Adhy Chandra, ST</p>
-            </div>
         </div>
-        <div class="col-4 p-2">
-            <div class="border rounded text-center shadow">
+        <div class="cards">
                 <a href="{% url 'blogs_section' 3 %}">
-                    <img src="/static/images/html2.png" class="w-25" alt="">
+                    <img src="/static/images/html2.png"  alt="">
                 </a>
                 <p class="h5 fw-bold">Pengenalan HTML 3 - Style</p>
                 <p>by: Suryo Adhy Chandra, ST</p>
-            </div>
         </div>
+        
 </div>
 {% endblock %}
