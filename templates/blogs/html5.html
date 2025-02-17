@@ -14,56 +14,72 @@
         Apa itu bootstrap 5?
     </p>
     <p>
-        Bootstrap 5 merupakan class
+        Bootstrap 5 adalah pustaka front-end populer yang menyederhanakan proses desain dan pengembangan web. Aplikasi ini dibuat oleh tim Twitter dan pertama kali dirilis pada tahun 2011.
     </p>
     <p>
-        Kita mungkin mengerti bahwa ketika kita membuat daftar peserta ekstra misalnya, kita mau membuat style:
-        <p class="px-4 mx-2" style="border-left: 1px solid grey;">
-            <b>Seorang</b> anak sedang <u>berlari kecil</u> tetapi ada <i>teman</i> yang mau ikut berlari juga. <br>
-            Ketika sampai di <b><i>kelas</i></b> mereka <s>tidak langsung duduk</s> tetapi minum  <sup>air segar</sup> dan <sub>makan camilan</sub>.
+        Bootstrap adalah framework web development berbasis HTML, CSS, dan JavaScript yang dirancang untuk mempercepat proses pengembangan web responsive dan mobile-first (memprioritaskan perangkat seluler).
+    </p>
+    <p>
+        Selain bisa digunakan untuk mengembangkan website dengan lebih cepat, Bootstrap juga merupakan framework gratis yang bersifat open-source. Skrip dan syntax yang disediakan Bootstrap bisa diterapkan untuk berbagai komponen dalam desain web.
+    </p>
+    <p>
+        Nah! Kali ini, selain membahas pengertian Bootstrap, kami juga akan membahas kelebihan dan kekurangannya, serta berbagai jenis file yang digunakan framework ini. Jadi, kami akan membantu Anda menentukan apakah Bootstrap adalah pilihan tepat untuk Anda. Mari mulai!
+    </p>
+    <p class="fw-bold h5 mt-2">
+        Bagaimana menggunakan bootstrap 5?
+    </p>
+    <p>
+        Kita ingat di dalam struktur html versi 5 terdapat head bukan?<br>
+        <p class="d-flex justify-content-center">
+            <img src="{% static 'images/blogs/struktur_html.png'%}" class="w-75 rounded border" alt="">
         </p>
-    </p>
-    <p class="h3 fw-bold py-2">Yuk segera kita mulai!</p>
-    <p>
-        <h5>1. Penampil ukuran huruf</h5>
-        <span>
-            Penampil ukuran huruf bs ditandai dengan tag &lt;h1&gt;kalimat yang mau dibesarkan&lt;/h1&gt;<br>
-            ukuran h1 adalah ukurang yang paling besar dan kemudian paling kecil adalah h5, yaitu: <br>
-            <p >
-                <h1 class="px-4 mx-2" style="border-left: 1px solid grey;">h1</h1><h2 class="px-4 mx-2" style="border-left: 1px solid grey;">h2</h2><h3 class="px-4 mx-2" style="border-left: 1px solid grey;">h3</h3><h4 class="px-4 mx-2" style="border-left: 1px solid grey;">h4</h4><h5 class="px-4 mx-2" style="border-left: 1px solid grey;">h5</h5>
+        Untuk menggunakan bootstrap 5, kita akan tambahkan sebuah tag di bawah tag &lt;head&gt;: <br>
+        <ul>
+            <li>
+                &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
+            </li>
+            <li>
+                &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+            </li>
+        </ul>
+        <p>
+            sehingga struktur htmlnya akan menjadi:
+        </p>
+        <p class="d-flex justify-content-center">
+            <img src="{% static 'images/blogs/struktur_bootstrap.png'%}" class="w-75 rounded border" alt="">
+        </p>
+        <p>
+            Nah, untuk melakukan pengetesan apakah bootstrap 5 kita sudah berhasil, kita akan coba menambahkan sebuah tag &lt;p&gt;&lt;/p&gt; dengan styling ukuran fontnya adalah <b>h1</b> dengan menambahkan kata kunci <b>class='h1'</b> di dalam tag <b>p</b> tersebut: <br>
+            <hr>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Bootstrap 5 Contoh&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p class="h1"&gt;
+        Saya menggunakan styling bootstrap 5
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            <hr>
+        </p>
+        <p>
+            Kemudian kita simpan file tersebut dengan nama bootstrap1.html dan kita jalankan di browser kita. Apakah ada tampilan yang berubah?<br>
+            <p class="d-flex justify-content-center">
+                <img src="{% static 'images/blogs/tampilan_bootstrap5.png'%}" class="w-75 rounded border" alt="">
             </p>
-        </span>
-    </p>
-    <p>
-        <h5>2. Membuat posisi kalimat tengah</h5>
-        <span>
-            Untuk menampilkan posisi kalimat atau apapun ke tengah sangat mudah, yaitu dengan menggunakan tag: <br>
-            <ul>
-                <li>Membuat ke tengah &lt;center&gt;kalimat yang mau ke tengah&lt;/center&gt;</li>
-            </ul>
-        </span>
-    </p>
-    <p>
-        <h5>3. Membuat huruf jadi tebal, miring, garis bawah, garis tengah</h5>
-        <span>
-            Untuk membuat huruf atau kalimat atau kata menjadi tebal, miring, garis tengah atau garis bawah menggunakan tag: <br>
-            <ul>
-                <li>Membuat tebal &lt;b&gt;kata yang mau ditebalkan&lt;/b&gt;</li>
-                <li>Membuat miring &lt;i&gt;kata yang mau dicetak miring&lt;/i&gt;</li>
-                <li>Membuat garis bawah &lt;u&gt;kalimat yang mau dikasih garis bawah&lt;/u&gt;</li>
-                <li>Membuat garis tengah &lt;s&gt;kalimat yang mau dikasih garis tengah&lt;/s&gt;</li>
-            </ul>
-        </span>
-    </p>
-    <p>
-        <h5>4. Membuat huruf menjadi seperti pangkat atau indeks</h5>
-        <span>
-            Untuk membuat huruf menjadi pangkat atau indeks menggunakan tag: <br>
-            <ul>
-                <li>Membuat pangkat (di atas)&lt;sup&gt;kata yang mau jadikan pangkat&lt;/sup&gt;</li>
-                <li>Membuat indeks (di bawah) &lt;sub&gt;kata yang mau dijadikan indeks&lt;/sub&gt;</li>
-            </ul>
-        </span>
+        </p>
+        <p class="my-4 text-center">
+            Kalau semua tampilan sama, berarti cara kita memanggil bootstrap 5 sudah benar! <b>Selamat!</b><br>
+            Kita akan lanjutkan minggu depan untuk membuat styling sederhana lain menggunakan boostrap 5!
+        </p>
     </p>
 </div>
 {% endblock %}
