@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+<div class="text-center">
+    <p>
+        <img src="{% static 'images/html1.png'%}" class="w-25" alt="" srcset="">
+    </p>
+    <p class="h3">Pengenalan HTML 4<br><span class="h4">Styling menggunakan bootstrap 5</span></p>
+    <p class="h5">oleh: Suryo Adhy Chandra, ST</p>
+</div>
+<div class="p-2 mt-2 shadow">
+    <p class="fw-bold h5 mt-2">
+        Tag Membuat Sytle
+    </p>
+    <p>
+        HTML memiliki fasilitas dasar untuk membuat styling. Styling atau gaya dalam bahasa indonesia, digunakan untuk
+        membuat tampilan informasi dalam html menjadi lebih jelas.
+    </p>
+    <p>
+        Kita mungkin mengerti bahwa ketika kita membuat daftar peserta ekstra misalnya, kita mau membuat style:
+        <p class="px-4 mx-2" style="border-left: 1px solid grey;">
+            <b>Seorang</b> anak sedang <u>berlari kecil</u> tetapi ada <i>teman</i> yang mau ikut berlari juga. <br>
+            Ketika sampai di <b><i>kelas</i></b> mereka <s>tidak langsung duduk</s> tetapi minum  <sup>air segar</sup> dan <sub>makan camilan</sub>.
+        </p>
+    </p>
+    <p class="h3 fw-bold py-2">Yuk segera kita mulai!</p>
+    <p>
+        <h5>1. Penampil ukuran huruf</h5>
+        <span>
+            Penampil ukuran huruf bs ditandai dengan tag &lt;h1&gt;kalimat yang mau dibesarkan&lt;/h1&gt;<br>
+            ukuran h1 adalah ukurang yang paling besar dan kemudian paling kecil adalah h5, yaitu: <br>
+            <p >
+                <h1 class="px-4 mx-2" style="border-left: 1px solid grey;">h1</h1><h2 class="px-4 mx-2" style="border-left: 1px solid grey;">h2</h2><h3 class="px-4 mx-2" style="border-left: 1px solid grey;">h3</h3><h4 class="px-4 mx-2" style="border-left: 1px solid grey;">h4</h4><h5 class="px-4 mx-2" style="border-left: 1px solid grey;">h5</h5>
+            </p>
+        </span>
+    </p>
+    <p>
+        <h5>2. Membuat posisi kalimat tengah</h5>
+        <span>
+            Untuk menampilkan posisi kalimat atau apapun ke tengah sangat mudah, yaitu dengan menggunakan tag: <br>
+            <ul>
+                <li>Membuat ke tengah &lt;center&gt;kalimat yang mau ke tengah&lt;/center&gt;</li>
+            </ul>
+        </span>
+    </p>
+    <p>
+        <h5>3. Membuat huruf jadi tebal, miring, garis bawah, garis tengah</h5>
+        <span>
+            Untuk membuat huruf atau kalimat atau kata menjadi tebal, miring, garis tengah atau garis bawah menggunakan tag: <br>
+            <ul>
+                <li>Membuat tebal &lt;b&gt;kata yang mau ditebalkan&lt;/b&gt;</li>
+                <li>Membuat miring &lt;i&gt;kata yang mau dicetak miring&lt;/i&gt;</li>
+                <li>Membuat garis bawah &lt;u&gt;kalimat yang mau dikasih garis bawah&lt;/u&gt;</li>
+                <li>Membuat garis tengah &lt;s&gt;kalimat yang mau dikasih garis tengah&lt;/s&gt;</li>
+            </ul>
+        </span>
+    </p>
+    <p>
+        <h5>4. Membuat huruf menjadi seperti pangkat atau indeks</h5>
+        <span>
+            Untuk membuat huruf menjadi pangkat atau indeks menggunakan tag: <br>
+            <ul>
+                <li>Membuat pangkat (di atas)&lt;sup&gt;kata yang mau jadikan pangkat&lt;/sup&gt;</li>
+                <li>Membuat indeks (di bawah) &lt;sub&gt;kata yang mau dijadikan indeks&lt;/sub&gt;</li>
+            </ul>
+        </span>
+    </p>
+</div>
+{% endblock %}
