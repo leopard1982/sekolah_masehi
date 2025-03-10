@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+    <div class="text-center">
+        <p>
+            <img src="{% static 'images/html1.png'%}" class="w-25" alt="" srcset="">
+        </p>
+        <p class="h3">Pengenalan HTML 6<br><span class="h4">Bermain dengan Warna</span></p>
+        <p class="h5">oleh: Suryo Adhy Chandra, ST</p>
+    </div>
+    <div class="container mt-3 fs-5">
+        Dalam melakukan pewarnaan, bootstrap 5 telah menyediakan template warna yang agak banyak, dan siap untuk dipakai. Hari ini kita akan mulai melakukan pengenalan pewarnaan untuk text dan background.
+    </div>
+    <div class="container mt-3 mb-3 fs-5">
+        Yuk segera kita gasken!
+    </div>
+    <div class="container">
+        <p class="h3"><u>1. Pewarnaan Text (Tulisan)</u></p>
+        <div class="text-primary">
+            text-primary
+        </div>
+        <div class="text-warning">
+            text-warning
+        </div>
+        <div class="text-secondary">
+            text-secondary
+        </div>
+        <div class="text-info">
+            text-info
+        </div>
+        <div class="text-danger">
+            text-danger
+        </div>
+        <div class="text-white bg-dark">
+            text-white --> background sengaja dihitamkan biar kelihatan
+        </div>
+        <div class="text-success">
+            text-success
+        </div>
+        <div class="text-light bg-dark">
+            text-light --> text-light sama seperti text-white yah.
+        </div>
+        <div class="text-dark">
+            text-dark
+        </div>
+    </div>
+    <div class="container mt-5">
+        <p class="h3"><u>2. Pewarnaan Background</u></p>
+        <div class="bg-primary text-center">
+            bg-primary
+        </div>
+        <div class="bg-warning text-center">
+            bg-warning
+        </div>
+        <div class="bg-secondary text-center">
+            bg-secondary
+        </div>
+        <div class="shadow bg-white text-center">
+            bg-white --> sengaja diberikan bayangan biar kelihatan putihnya.
+        </div>
+        <div class="bg-info text-center">
+            bg-info
+        </div>
+        <div class="bg-danger text-center">
+            bg-danger
+        </div>
+        <div class="bg-light text-center shadow">
+            bg-light --> bg-light sama seperti bg-white yah.
+        </div>
+        <div class="bg-success text-center">
+            bg-success
+        </div>
+        <div class="bg-dark text-white text-center">
+            bg-dark --> text sengaja diputihkan biar kelihatan kontrasnya.
+        </div>
+        
+    </div>
+{% endblock %}
