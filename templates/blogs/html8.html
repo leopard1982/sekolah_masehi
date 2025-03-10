@@ -6,7 +6,7 @@
         <p>
             <img src="{% static 'images/html1.png'%}" class="w-25" alt="" srcset="">
         </p>
-        <p class="h3">Pengenalan HTML 8<br><span class="h4">Membagi Bidang/ Lokasi</span></p>
+        <p class="h3">Pengenalan HTML 8<br><span class="h4">Membuat Dua Kolom</span></p>
         <p class="h5">oleh: Suryo Adhy Chandra, ST</p>
     </div>
     <div class="container mt-3 fs-5 d-flex justify-content-start">
@@ -17,8 +17,97 @@
     </div>
     <div class="container mt-3 fs-5">
         1. Kita akan membuat sebuah halaman dibagi 2 seperti pada gambar di bawah ini:
-        <p class="py-3">
-            
+        <p class="py-3  text-center fs-6 fw-bold">
+            <img src="{% static 'images/dua-kolom.png'%}" class="w-75 rounded" alt=""><br>
+            Gambar Microsoft Word untuk 2 kolom
         </p>
+        2. Langkah2nya adalah sebagai berikut:
+        <ul>
+            <li>Kita buat terlebih dahulu untuk base html boiler plate kita: <br>
+                <pre class="bg-secondary p-3 rounded fw-bold">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Membuat Dua Kolom&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </li>
+            <li>
+                Kemudian di dalam tag body kita tambahkan tag:
+                <pre class="bg-secondary p-3 rounded fw-bold">
+&lt;body&gt;
+    &lt;div class="row"&gt;
+
+    &lt;/div&gt;
+&lt;/body&gt;
+                </pre>
+                arti dari tag itu adalah: kita membuat sebuah div baru dengan styling class bootstrap 5 berupa row, dan akan otomatis membuat kerangka untuk baris dan kolom.
+            </li>
+            <li>
+                Setelah itu kita tambahkan blok kolom dengan menuliskan 2 blok berupa col-6
+                <pre class="bg-secondary p-3 rounded fw-bold">
+&lt;body&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-6"&gt;
+
+        &lt;/div&gt;
+        &lt;div class="col-6"&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+                </pre>
+                hah kok ada kolom 6 dan 6 berjejer? apa pula itu? Di dalam melakukan styling menggunakan bootstrap 5, layar dari kiri ke kanan dibagi menjadi 12 bagian atau 12 kolom, yaitu kolom: col-1, col-2 ... sampai ... col-12. Karena dalam 1 row tadi dibuat col-6 dan col-6, maka akan dibuat 2 kolom yang lebarnya sama. Kita bisa melakukan penggeseran col-4 dan col-8 misalnya, akan tetapi agar hasil pembagian kolom tersebut menjadi 1 baris <b>Totalnya harus 12!</b>
+            </li>
+            <li>
+                Kemudian seperti biasa kita buat lorem ipsum
+                <pre class="bg-secondary p-3 rounded fw-bold">
+&lt;body&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-6"&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam provident pariatur accusantium adipisci alias aperiam neque sapiente nemo nesciunt, itaque laboriosam quibusdam doloribus possimus suscipit numquam, necessitatibus cum accusamus explicabo.
+        &lt;/div&gt;
+        &lt;div class="col-6"&gt;
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis accusamus aperiam, natus aspernatur eveniet eos, atque delectus et perferendis iure ab necessitatibus dolore doloremque sint numquam odit quis nisi?
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+                </pre>
+            </li>
+        </ul>
+        Untuk block lengkap pembagian 2 kolom adalah sebagai berikut:
+        <pre class="p-3 rounded border border-dark">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Membuat Dua Kolom&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-6"&gt;
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam provident pariatur accusantium adipisci alias aperiam neque sapiente nemo nesciunt, itaque laboriosam quibusdam doloribus possimus suscipit numquam, necessitatibus cum accusamus explicabo.
+        &lt;/div&gt;
+        &lt;div class="col-6"&gt;
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis accusamus aperiam, natus aspernatur eveniet eos, atque delectus et perferendis iure ab necessitatibus dolore doloremque sint numquam odit quis nisi?
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </div>
+    <div class="container fs-4 pt-3">
+        Kita akan mempelajari ulang lagi sebelum membuat profile kita. Kalau ada pertanyaan boleh segera tanyakan di grup whatsapp atau di kelas yak!
     </div>
 {% endblock %}
