@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+    <div class="text-center">
+        <p>
+            <img src="{% static 'images/html1.png'%}" class="w-25" alt="" srcset="">
+        </p>
+        <p class="h3">Pengenalan HTML 7<br><span class="h4">Belajar Padding dan Margin</span></p>
+        <p class="h5">oleh: Suryo Adhy Chandra, ST</p>
+    </div>
+    <div class="container mt-3 fs-5 d-flex justify-content-start">
+        Pernahkan kalian mendengar kata:
+        <ol>
+            <li>Margin?</li>
+            <li>Padding?</li>
+        </ol>
+    </div>
+    <div class="container mt-3 fs-5">
+        <b>Margin</b> dalam esensinya, margin adalah ruang kosong yang mengelilingi elemen HTML, berfungsi sebagai “penyangga” yang memisahkan satu elemen dari elemen lainnya. Dengan mengatur margin secara tepat, kita dapat menciptakan harmoni antara konten, gambar, dan komponen lainnya di halaman web.
+Lebih dari sekadar ruang kosong, margin berperan strategis dalam menentukan bagaimana elemen-elemen tersebut berinteraksi dan dipersepsikan oleh pengunjung situs <br><a href="https://www.revou.co/panduan-teknis/css-margin" class="btn btn-primary">cek sumber</a>
+    </div>
+    <div class="container mt-3 fs-5">
+        <b>Padding</b> adalah sebutan untuk spasi atau ruang diantara konten dan border. Gambar CSS Box Model berikut bisa menjelaskan dimana letak padding ini.
+        <br>
+        <p class="p-3">
+            <img src="{% static 'images/css-box-model.png'%}" alt="">
+        </p>
+        <a href="https://www.duniailkom.com/tutorial-belajar-css-pengertian-padding-dan-fungsi-padding-dalam-css/" class="btn btn-primary">cek sumber</a>
+    </div>
+    <div class="container mt-3 fs-5">
+        Untuk konsepnya sudah mengerti?
+    </div>
+    <div class="container mt-3 fs-5">
+        <b>1. Margin</b>
+        <p class="p-2">
+            Margin dituliskan dalam <b>class</b> di dalam tag yang akan dilakukan styling menggunakan kata kunci:
+            <ul>
+                <li>seluruh margin: m-1, m-2, m-3, m-4 atau m-5</li>
+                <li>margin sebelah kiri saja: ms-1, ms-2, ms-3, ms-4 atau ms-5 (ms=margin start, start menandakan kiri)</li>
+                <li>margin sebelah kanan saja: me-1, me-2, me-3, me-4 atau me-5 (me=margin end, end menandakan kanan)</li>
+                <li>margin sebelah atas saja: mt-1, mt-2, mt-3, mt-4 atau mt-5 (mt=margin top, top menandakan atas)</li>
+                <li>margin sebelah bawah saja: mb-1, mb-2, mb-3, mb-4 atau mb-5 (mb=margin bottom, bottom menandakan bawah)</li>
+                <li>margin sumbu y (vertikal): my-1, my-2, my-3, my-4 atau my-5</li>
+                <li>margin sumbu x (horizontal): mx-1, mx-2, mx-3, mx-4 atau mx-5</li>
+            </ul>
+            semakin besar margin, maka pergeseran untuk margin akan semakin besar pula. kita coba?
+        </p>
+    </div>
+    <div class="container mt-3 fs-5">
+        <b>2. Padding</b>
+        <p class="p-2">
+            Dari penjelasan awal tadi yang (agak) panjang, inti dari padding adalah kita menggeser komponen yang ada di dalam margin, tanpa melakukan pergeseran margin. Sehingga bisa dikatakan bawah margin tidak berubah, hanya <b>isi</b> dari yang ada di dalam margin atau div atau tag yang lainnya itulah yang akan bergeser. Padding dituliskan dalam <b>class</b> di dalam tag yang akan dilakukan styling menggunakan kata kunci:
+            <ul>
+                <li>seluruh padding: p-1, p-2, p-3, p-4 atau p-5</li>
+                <li>padding sebelah kiri saja: ps-1, ps-2, ps-3, ps-4 atau ps-5 (ps=padding start, start menandakan kiri)</li>
+                <li>padding sebelah kanan saja: pe-1, pe-2, pe-3, pe-4 atau pe-5 (pe=padding end, end menandakan kanan)</li>
+                <li>padding sebelah atas saja: pt-1, pt-2, pt-3, pt-4 atau pt-5 (pt=padding top, top menandakan atas)</li>
+                <li>padding sebelah bawah saja: pb-1, pb-2, pb-3, pb-4 atau pb-5 (pb=padding bottom, bottom menandakan bawah)</li>
+                <li>padding sumbu y (vertikal): py-1, py-2, py-3, py-4 atau py-5</li>
+                <li>padding sumbu x (horizontal): px-1, px-2, px-3, px-4 atau px-5</li>
+            </ul>
+            semakin besar padding, maka pergeseran untuk margin akan semakin besar pula. kita coba?
+        </p>
+    </div>
+{% endblock %}
